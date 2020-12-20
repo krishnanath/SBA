@@ -1,0 +1,48 @@
+<div class="swiper-slide">
+  <img
+    class="banner-image"
+    src="{{ env[0].url + bannerimagedata[0].bannerimage.url }}"
+  />
+
+  <div class="overlay"></div>
+</div>
+<div class="text-block">
+  <h3>{{ bannerimagedata[0].title }}</h3>
+</div>
+
+<br />
+
+<div class="container">
+  <h4 style="text-align:center;" class="text-caps font-weight-bold wow-outer">
+    <span class="wow slideInDown">{{ bannerimagedata[0].subtitle }}</span>
+  </h4>
+  <div class="row  row-lg-50 row-35 offset-top-2">
+    <div class="gridloop overflow-auto-sm">
+      <div class="grid-card">
+        <div *ngFor="let visa of visacategories" class="grid-box">
+          <img
+            class="card__img"
+            src="{{ env[0].url + visa.image.url }}"
+            alt=""
+          />
+          <div class="content">
+            <h5 class="card__header">{{ visa.title }}</h5>
+            <p class="card__text">{{ visa.description }}</p>
+            <br />
+            <div style="text-align:center">
+              <a
+                [routerLink]="['/visacategory', visa.id]"
+                target="_blank"
+                style="color:#0d0d0d;"
+                class="button readmore"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="padding-bootom"></div>
+  </div>
+</div>

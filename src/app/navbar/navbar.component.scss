@@ -1,0 +1,100 @@
+ 
+
+ 
+@media screen and (min-width: 568px) {
+.rd-navbar-aside{
+     height: 111px;
+ }
+}
+@media screen and (max-width: 568px) {
+    .rd-navbar-aside{
+         height: 0;
+     }
+    }
+
+
+    .rd-nav-link {
+        text-decoration:  none !important;
+    }
+
+
+    .rd-navbar-nav-wrap{
+        margin-top:11px;
+    }
+
+
+    // MEGA
+    @media all and (min-width: 992px) {
+        .navbar{ padding-top: 0; padding-bottom: 0; }
+        .navbar .has-megamenu{position:static!important;}
+ 
+ 
+        .megamenu
+        {width:900px !important; 
+            margin-left: -230px;
+            padding:20px;
+            margin-top: 32px;
+            border-top: 4px solid #0d0d0d;
+            border-radius: 0px;
+            background: #fcfcfc;
+        }
+
+         .navgrid{
+        display: grid;
+        grid-template-columns: repeat(4,auto);
+        // border: 1px solid #aaaaaa8e;
+     
+    }
+
+        // @media all and (max-width: 992px) {
+        //     .largescreennav{
+        //         display: none;
+        //     }
+        // }
+
+
+        .navbar .nav-link{ padding-top:1rem; padding-bottom:1rem;  }
+    }
+
+    
+    .largescreennav:hover{
+.megamenu{
+    display: block;
+}
+    }
+
+.countrylistgrid{
+    cursor: pointer;
+    padding: 11px;
+    // padding: .5rem;
+    display: grid;
+    // margin-bottom: 11px;
+    grid-template-columns: 55px auto;
+    border: 1px solid #aaaaaa8e;
+    a{
+        line-height: 33px;
+        text-transform: uppercase;
+        color: #0d0d0d;
+        text-decoration: none;
+    }
+    img{
+        height: 33px;
+        width: 44px;
+        object-fit: contain;
+    }
+     
+}
+
+.countrylistgrid:hover{
+
+    background: #0d0d0ddc;
+    a{
+    color: #ffffff;
+    }
+}
+.topnavtextpad {
+    padding-top: 15px;
+}
+
+    // CSS DROPDOWN
+    

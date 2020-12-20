@@ -1,0 +1,456 @@
+ <div class="page">
+
+   <app-homeslider></app-homeslider>
+
+
+
+   <section class="section novi-background section-md text-center">
+     <div class="container">
+       <h4 class="text-uppercase font-weight-bold wow-outer">
+         <span class="wow slideInDown">Visa Categories</span>
+       </h4>
+       <div class="row row-lg-50 row-35 offset-top-2">
+         <!-- UI CARD -->
+         <div class="grid">
+           <div class="grid__item">
+             <div class="card">
+               <img class="card__img" src="{{ env[0].url + visacategories[0].image.url }}" alt="" />
+               <div class="card__content">
+                 <h1 class="card__header">{{ visacategories[0].title }}</h1>
+                 <p class="card__text">{{ visacategories[0].description }}</p>
+                 <br />
+                 <div style="text-align:center">
+                   <a [routerLink]="['/visacategory',visacategories[0].id]" style="color:#0d0d0d;"
+                     class="button readmore">Read More</a>
+                 </div>
+                 <!-- <button class="card__btn">Explore <span>&rarr;</span></button> -->
+               </div>
+             </div>
+           </div>
+           <div class="grid__item">
+             <div class="card">
+               <img class="card__img" src="{{ env[0].url + visacategories[1].image.url }}" alt="" />
+               <div class="card__content">
+                 <h1 class="card__header">{{ visacategories[1].title }}</h1>
+                 <p class="card__text">{{ visacategories[1].description }}</p>
+                 <!-- <button class="card__btn">Explore <span>&rarr;</span></button>-->
+                 <br />
+                 <div style="text-align:center">
+                   <a [routerLink]="['/visacategory',visacategories[1].id]" style="color:#0d0d0d;"
+                     class="button readmore">Read More</a>
+                 </div>
+               </div>
+             </div>
+           </div>
+
+           <div class="grid__item">
+             <div class="card">
+               <img class="card__img" src="{{ env[0].url + visacategories[2].image.url }}" alt="" />
+               <div class="card__content">
+                 <h1 class="card__header">{{ visacategories[2].title }}</h1>
+                 <p class="card__text">{{ visacategories[2].description }}</p>
+                 <!-- <button class="card__btn">Explore <span>&rarr;</span></button>-->
+                 <br />
+                 <div style="text-align:center">
+                   <a [routerLink]="['/visacategory',visacategories[2].id]" style="color:#0d0d0d;"
+                     class="button readmore">Read More</a>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <div class="grid__item">
+             <div class="card">
+               <img class="card__img" src="{{ env[0].url + visacategories[3].image.url }}" alt="" />
+               <div class="card__content">
+                 <h1 class="card__header">{{ visacategories[3].title }}</h1>
+                 <p class="card__text">{{ visacategories[3].description }}</p>
+                 <!-- <button class="card__btn">Explore <span>&rarr;</span></button>-->
+                 <br />
+                 <div style="text-align:center">
+                   <a [routerLink]="['/visacategory',visacategories[3].id]" style="color:#0d0d0d;"
+                     class="button readmore">Read More</a>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <div class="grid__item">
+             <div class="card">
+               <img class="card__img" src="{{ env[0].url + visacategories[4].image.url }}" alt="" />
+               <div class="card__content">
+                 <h1 class="card__header">{{ visacategories[4].title }}</h1>
+                 <p class="card__text">{{ visacategories[4].description }}</p>
+                 <!-- <button class="card__btn">Explore <span>&rarr;</span></button>-->
+                 <br />
+                 <div style="text-align:center">
+                   <a [routerLink]="['/visacategory',visacategories[4].id]" style="color:#0d0d0d;"
+                     class="button readmore">Read More</a>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <div class="grid__item">
+             <div class="card">
+               <img class="card__img" src="{{ env[0].url + visacategories[5].image.url }}" alt="" />
+               <div class="card__content">
+                 <h1 class="card__header">{{ visacategories[5].title }}</h1>
+                 <p class="card__text">{{ visacategories[5].description }}</p>
+                 <!-- <button class="card__btn">Explore <span>&rarr;</span></button>-->
+                 <br />
+                 <div style="text-align:center">
+                   <a [routerLink]="['/visacategory',visacategories[5].id]" style="color:#0d0d0d;"
+                     class="button readmore">Read More</a>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+
+         <!-- END UI CARD -->
+
+
+
+
+            <div class="col-md-12 wow-outer"><a class="button button-primary button-winona button-md" href="#">Know More</a></div>
+          </div>
+        </div>
+      </section>
+
+         <!-- ABOUT US SECTION -->
+
+         <section class="about-us section-lg bg-gray-100">
+
+            <div class="container">
+              <div class="row row-30">
+              <div class="col-md-6">
+              <h4 class="font-weight-bold"> About Us</h4>
+              <p class="wow fadeInUpSmall">{{about_us[0].des}}
+                <br> {{about_us[0].des2}}
+              </p>
+
+              </div>
+              <div class="col-md-6 " >
+                  <h4 class="font-weight-bold">Enquire Now</h4>
+                  <form class="rd-form rd-mailform" >
+                    <div class="row row-10">
+                      <div class="col-md-6 wow-outer">
+                        <div class="form-wrap wow fadeSlideInUp">
+                          <label class="form-label-outside" for="contact-first-name">First Name</label>
+                          <input class="form-input" id="contact-first-name" type="text" name="name" data-constraints="@Required">
+                        </div>
+                      </div>
+                      <div class="col-md-6 wow-outer">
+                        <div class="form-wrap wow fadeSlideInUp">
+                          <label class="form-label-outside" for="contact-last-name">Last Name</label>
+                          <input class="form-input" id="contact-last-name" type="text" name="name" data-constraints="@Required">
+                        </div>
+                      </div>
+                      <div class="col-md-6 wow-outer">
+                        <div class="form-wrap wow fadeSlideInUp">
+                          <label class="form-label-outside" for="contact-email">E-mail</label>
+                          <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Email @Required">
+                        </div>
+                      </div>
+                      <div class="col-md-6 wow-outer">
+                        <div class="form-wrap wow fadeSlideInUp">
+                          <label class="form-label-outside" for="contact-phone">Phone</label>
+                          <input class="form-input" id="contact-phone" type="text" name="phone" data-constraints="@PhoneNumber">
+                        </div>
+                      </div>
+                      <div class="col-12 wow-outer">
+                        <div class="form-wrap wow fadeSlideInUp">
+                          <label class="form-label-outside" for="contact-message">Your Message</label>
+                          <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="group group-middle">
+                      <div class="wow-outer">
+                        <button class="button button-primary button-winona wow slideInRight" type="submit">Send Message</button>
+                      </div>
+                      <p>or use</p>
+                      <div class="wow-outer"><a class="button button-primary-outline button-icon button-icon-left button-winona wow slideInLeft" href="#"><span class="icon novi-icon text-primary mdi mdi-facebook-messenger"></span>Messenger</a></div>
+                    </div>
+                  </form>
+              </div>
+            </div>
+
+            </div>
+          </section>
+
+   <!-- END ABOUT US SECTION -->
+
+   <!-- Services-->
+   <section class="section novi-background section-lg text-center">
+     <div class="container">
+       <h4 class="text-uppercase font-weight-bold">
+         Explore Your STUDY ABROAD COUNTRIES
+       </h4>
+       <br /><br />
+       <!-- UI CARD -->
+       <div class="grid">
+
+
+
+
+         <div class="grid__item">
+           <div class="card cardhover">
+             <a [routerLink]="['/destination',studyabroadcountries[0].id]">
+
+               <img class="card__img" src="{{ env[0].url + studyabroadcountries[0].image.url }}" alt="" />
+             </a>
+             <div class="card__content country-card">
+               <div>
+                 <h1 style="color:#444;" class="card__header">{{ studyabroadcountries[0].title }}</h1>
+
+               </div>
+
+               <div class="country-flag">
+                 <img src="{{ env[0].url + studyabroadcountries[0].countryflag.url }}" />
+               </div>
+
+
+               <!-- <button class="card__btn">Explore <span>&rarr;</span></button> -->
+             </div>
+           </div>
+         </div>
+         <div class="grid__item">
+           <div class="card cardhover">
+             <a [routerLink]="['/destination',studyabroadcountries[1].id]">
+
+               <img class="card__img" src="{{ env[0].url + studyabroadcountries[1].image.url }}" alt="" />
+             </a>
+             <div class="card__content">
+               <div class="country-card">
+                 <div>
+                   <h1 style="color:#444;" class="card__header">{{ studyabroadcountries[1].title }}</h1>
+
+                 </div>
+
+                 <div class="country-flag">
+                   <img src="{{ env[0].url + studyabroadcountries[1].countryflag.url }}" />
+                 </div>
+               </div>
+               <!-- <p class="countrydes">{{studyabroadcountries[1].description}}</p>  -->
+
+             </div>
+
+
+
+
+           </div>
+         </div>
+         <div class="grid__item">
+           <div class="card cardhover">
+             <a [routerLink]="['/destination',studyabroadcountries[2].id]">
+
+               <img class="card__img" src="{{ env[0].url + studyabroadcountries[2].image.url }}" alt="" />
+             </a>
+             <div class="card__content country-card">
+               <div>
+                 <h1 style="color:#444;" class="card__header">{{ studyabroadcountries[2].title }}</h1>
+
+               </div>
+
+               <div class="country-flag">
+                 <img src="{{ env[0].url + studyabroadcountries[2].countryflag.url }}" />
+               </div>
+
+
+               <!-- <button class="card__btn">Explore <span>&rarr;</span></button> -->
+             </div>
+           </div>
+         </div>
+         <div class="grid__item">
+           <div class="card cardhover">
+             <a [routerLink]="['/destination',studyabroadcountries[3].id]">
+
+               <img class="card__img" src="{{ env[0].url + studyabroadcountries[3].image.url }}" alt="" />
+             </a>
+             <div class="card__content country-card">
+               <div>
+                 <h1 style="color:#444;" class="card__header">{{ studyabroadcountries[3].title }}</h1>
+
+               </div>
+
+               <div class="country-flag">
+                 <img src="{{ env[0].url + studyabroadcountries[3].countryflag.url }}" />
+               </div>
+
+
+               <!-- <button class="card__btn">Explore <span>&rarr;</span></button> -->
+             </div>
+           </div>
+         </div>
+         <div class="grid__item">
+           <div class="card cardhover">
+             <a [routerLink]="['/destination',studyabroadcountries[4].id]">
+
+               <img class="card__img" src="{{ env[0].url + studyabroadcountries[4].image.url }}" alt="" />
+             </a>
+             <div class="card__content country-card">
+               <div>
+                 <h1 style="color:#444;" class="card__header">{{ studyabroadcountries[4].title }}</h1>
+
+               </div>
+
+               <div class="country-flag">
+                 <img src="{{ env[0].url + studyabroadcountries[4].countryflag.url }}" />
+               </div>
+
+
+               <!-- <button class="card__btn">Explore <span>&rarr;</span></button> -->
+             </div>
+           </div>
+         </div>
+         <div class="grid__item">
+           <div class="card cardhover">
+             <a [routerLink]="['/destination',studyabroadcountries[5].id]">
+               <img class="card__img" src="{{ env[0].url + studyabroadcountries[5].image.url }}" alt="" />
+             </a>
+             <div class="card__content country-card">
+               <div>
+                 <h1 style="color:#444;" class="card__header">{{ studyabroadcountries[5].title }}</h1>
+
+               </div>
+
+               <div class="country-flag">
+
+                 <img src="{{ env[0].url + studyabroadcountries[5].countryflag.url }}" />
+               </div>
+
+
+               <!-- <button class="card__btn">Explore <span>&rarr;</span></button> -->
+             </div>
+           </div>
+         </div>
+
+
+       </div>
+       <br />
+       <br />
+       <div class="col-md-12 wow-outer">
+         <a class="button button-primary a-white button-winona button-md" routerLink="/studyabroadcountries">Explore
+           More</a>
+       </div>
+
+       <!-- END UI CARD -->
+     </div>
+   </section>
+
+   <section class="section novi-background section-lg bg-gray-100">
+     <div class="container">
+       <div class="row row-30">
+         <div class="col-sm-6 col-lg-4 wow-outer">
+           <article class="box-minimal">
+             <div class="box-chloe__icon novi-icon linearicons-user wow fadeIn"></div>
+             <div class="box-minimal-main wow-outer">
+               <h4 class="box-minimal-title wow slideInDown">
+                 Qualified Employees
+               </h4>
+               <p class="wow fadeInUpSmall">
+                 Our team consists of more than 20 qualified and experienced real
+                 estate brokers and property managers ready to help you.
+               </p>
+             </div>
+           </article>
+         </div>
+         <div class="col-sm-6 col-lg-4 wow-outer">
+           <article class="box-minimal">
+             <div class="box-chloe__icon novi-icon linearicons-bubble-text wow fadeIn" data-wow-delay=".1s"></div>
+             <div class="box-minimal-main wow-outer">
+               <h4 class="box-minimal-title wow slideInDown" data-wow-delay=".1s">
+                 Free Consultations
+               </h4>
+               <p class="wow fadeInUpSmall" data-wow-delay=".1s">
+                 Our acquaintance with a client always begins with a free
+                 consultation to find out what kind of property they are looking
+                 for.
+               </p>
+             </div>
+           </article>
+         </div>
+         <div class="col-sm-6 col-lg-4 wow-outer">
+           <article class="box-minimal">
+             <div class="box-chloe__icon novi-icon linearicons-star wow fadeIn" data-wow-delay=".2s"></div>
+             <div class="box-minimal-main wow-outer">
+               <h4 class="box-minimal-title wow slideInDown" data-wow-delay=".2s">
+                 100% Guaranteed
+               </h4>
+               <p class="wow fadeInUpSmall" data-wow-delay=".2s">
+                 All the results that you get from our realtors are 100%
+                 guaranteed to offer you the best choice of properties throughout
+                 the USA.
+               </p>
+             </div>
+           </article>
+         </div>
+       </div>
+     </div>
+   </section>
+
+   <!-- Best offer-->
+   <section class="section novi-background section-1 bg-primary-darker text-center"
+     style="background-image: url(https://abeservices.in/wp-content/themes/abeservices/assets/images/loan-bg.jpg);">
+     <div class="container">
+       <div class="row justify-content-center">
+         <div class="col-sm-10 col-lg-7 col-xl-6">
+           <h3 class="wow-outer">
+             <span class="wow slideInDown text-uppercase">Education Loan Assistance</span>
+           </h3>
+           <p class="heading-subtitle">SBA Group</p>
+           <p class="wow-outer offset-top-4">
+             <span class="wow slideInDown" data-wow-delay=".05s">
+               Ensure That Students Receive Funding From Leading Banks To Aid In
+               Their Quest To Study Abroad.</span>
+           </p>
+           <div class="wow-outer button-outer">
+             <a class="button button-primary-white button-winona wow slideInDown" href="#" data-wow-delay=".1s">Know
+               more</a>
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
+   <section class="section novi-background section-lg text-center">
+     <div class="container">
+       <h3 class="wow-outer">
+         <span class="wow slideInDown text-uppercase">Testimonials</span>
+       </h3>
+       <!-- Owl Carousel-->
+       <div class="review-grid">
+         <div *ngFor="let reviews of testmonials">
+
+           <div *ngIf="reviews.id <5 === true">
+             <blockquote class="quote-classic">
+
+
+               <div class="quote-classic-meta">
+                 <div class="quote-classic-avatar">
+                   <img src="{{reviews.img}}" alt="" width="96" height="96" />
+                 </div>
+                 <div class="quote-classic-info">
+                   <cite class="quote-classic-cite">{{reviews.name}}</cite>
+                   <p class="quote-classic-caption">{{reviews.position}}</p>
+                 </div>
+               </div>
+               <div class="quote-classic-text">
+                 <p>
+                   {{reviews.review}}
+                 </p>
+
+               </div>
+             </blockquote>
+           </div>
+
+         </div>
+
+
+       </div>
+       <div class="col-md-12 wow-outer">
+         <a routerLink="/visacategories" class="button a-white button-primary button-winona button-md">View More</a>
+       </div>
+
+
+     </div>
+   </section>
+ </div>

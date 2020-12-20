@@ -1,0 +1,140 @@
+ 
+  $transition: .2s;
+  $color-header: #0d0d0d;
+
+  @media screen and (max-width: 812px) {
+    .overflow-auto{
+        overflow: auto;
+        // height: auto;
+
+      }
+    .grid-card{
+
+ grid-template-columns:repeat(1, auto) !important;
+       
+
+    }
+
+  }
+  @media screen and (min-width: 1012px) {
+    .grid-card{
+
+        // grid-template-columns:repeat(4, auto) !important;
+              
+       
+           }
+  }
+  .grid-pad{
+      padding-left: 22px;
+      padding-right: 22px;
+      padding-top: 22px;
+      padding-bottom: 22px;
+  }
+
+
+.grid-card{
+    display: grid;
+    grid-template-columns: repeat(3, auto) ;
+    grid-gap: 22px;
+ 
+
+    .grid-box{
+        background-color: #fff;
+ 
+        // border-radius: .4rem;
+        overflow: hidden;
+        box-shadow: 0 3rem 6rem rgba(0, 0, 0, .1);
+        cursor: pointer;
+        transition: $transition;
+    }
+    .grid-box:hover{
+        transform: translateY(-.5%);
+        box-shadow: 0 4rem 8rem rgba(0, 0, 0, .2);  
+    }
+
+    img{
+        display: block;
+        width: 100%;
+        height: 11rem;
+        object-fit: cover;
+    }
+.content{
+    padding: .8rem .8rem;
+
+}
+.header{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $color-header;
+    // margin-bottom: .5rem;
+    text-transform: capitalize !important;
+    text-align: left;
+}
+}
+
+// .country-card{
+ 
+//     display: grid;
+//     grid-template-columns: repeat(2, auto);
+//   }
+  
+//   .cardhover:hover{
+//     background: #e9e9e9;
+//     color: #fff;
+//     border-color: #fff;
+//     .card__header, p{
+//       // color: #fff !important;
+//     }
+//   }
+  
+  .flaggrid{
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+
+    
+ 
+     
+  .card__header{
+      text-align: left;
+  }
+  }
+
+  .country-flag{
+  
+    text-align: right;
+   img{
+     height: 28px;
+     width: auto;
+     float: right;
+   }
+   }
+
+   .card__text{
+       height: 122px;
+       overflow: hidden;
+   }
+
+   .button-primary {
+       background: #fff !important;
+       color: #0d0d0d !important;
+       border-radius: #0d0d0d !important;
+   }
+
+
+//    banners overlay
+   
+   .swiper-slider{
+       position: relative;
+   }
+
+   .overlay {
+    position: absolute;
+      background-color: #0d0d0d69;
+      height: 100%;
+      width: 100%;
+  }
+
+
+  .button:hover{
+      color: #d3ad68 !important;
+  }

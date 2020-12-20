@@ -1,0 +1,42 @@
+.swiper-slider{
+   position: relative;
+}
+
+@media screen and (max-width: 777px) {
+   .text-block{
+      top: 177px !important;
+
+   }
+
+}
+.overlay {
+position: absolute;
+  background-color: #0d0d0d69;
+  height: 100%;
+  width: 100%;
+}
+.readmore:hover{
+   background: #313131;
+   color: #fff !important;
+     }
+
+     .text-block{
+         width: 100%;
+       position: absolute;
+       top: 130px;
+       -ms-transform: translateY(-50%);
+       transform: translateY(-50%);
+    z-index: 4;
+    
+    h3{
+       text-align: center;
+       color: #ffffff;
+       text-transform: uppercase;
+    }
+
+   }
+   
+   
+   .layout-bordered-item {
+      border-left: 1px solid #d3ad683f !important;
+   }

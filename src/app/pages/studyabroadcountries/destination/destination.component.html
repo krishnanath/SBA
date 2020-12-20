@@ -1,0 +1,216 @@
+<div class="swiper-slide">
+  <img class="banner-image" src="{{ env[0].url + data.bannerimage.url }}" />
+
+  <div class="overlay"></div>
+  <div class="text-block">
+    <h3>{{ data.title }}</h3>
+  </div>
+</div>
+
+<!-- <section class="section" >
+        <div>
+        <img class="banner-image"  src="{{ env[0].url + data.bannerimage.url }}"/>
+        <div class="banner-overlay"></div>
+    </div>
+         
+      </section> -->
+
+<div class="container">
+  <br /><br />
+  <!-- <p>{{data.description}}</p> -->
+  <markdown>{{ data.CountryInformation }}</markdown>
+</div>
+
+<div class="swiper-slide">
+  <img
+    class="quickcontactimg"
+    src="{{env[0].url + aboutus.quickContactFormBackgroundImage.url}}"
+  />
+
+  <div class="quickcontactoverlay"></div>
+
+  <div class="quickcontact">
+    <div class="quickcontactgrid container">
+      <div class="quickcontactmarkdown">
+            <h3>{{data.QuickContactSectionTitle}}</h3>
+            <br/>
+      <markdown>{{data.QuickContactSectionInfo}}</markdown>
+      </div>
+
+     
+   
+      <div>
+        <form
+          class="rd-form rd-mailform"
+          data-form-output="form-output-global"
+          data-form-type="contact"
+          method="post"
+          action="bat/rd-mailform.php"
+        >
+          <div style="text-align:center">
+            <h4>Quick Contact</h4>
+          </div>
+
+          <div class="row row-10">
+            <div class="col-md-12 wow-outer">
+              <div class="form-wrap wow fadeSlideInUp">
+                <!-- <label class="form-label-outside" for="contact-first-name">Name</label> -->
+                <input
+                  class="form-input"
+                  placeholder="Enter your name"
+                  id="contact-first-name"
+                  type="text"
+                  name="name"
+                  data-constraints="@Required"
+                />
+              </div>
+            </div>
+            <div class="col-md-12 wow-outer">
+              <div class="form-wrap wow fadeSlideInUp">
+                <!-- <label class="form-label-outside" for="contact-last-name">Highest Qualification </label> -->
+                <input
+                  placeholder="Your highest qualification"
+                  class="form-input"
+                  id="contact-last-name"
+                  type="text"
+                  name="name"
+                  data-constraints="@Required"
+                />
+              </div>
+            </div>
+            <div class="col-md-12 wow-outer">
+              <div class="form-wrap wow fadeSlideInUp">
+                <!-- <label class="form-label-outside" for="contact-last-name">Program Interested </label> -->
+                <input
+                  placeholder="Which program are you intersted in"
+                  class="form-input"
+                  id="contact-last-name"
+                  type="text"
+                  name="name"
+                  data-constraints="@Required"
+                />
+              </div>
+            </div>
+            <div class="col-md-12 wow-outer">
+              <div class="form-wrap wow fadeSlideInUp">
+                <!-- <label class="form-label-outside" for="contact-email">E-mail</label> -->
+                <input
+                  placeholder="Enter your email"
+                  class="form-input"
+                  id="contact-email"
+                  type="email"
+                  name="email"
+                  data-constraints="@Email @Required"
+                />
+              </div>
+            </div>
+            <div class="col-md-12 wow-outer">
+              <div class="form-wrap wow fadeSlideInUp">
+                <!-- <label class="form-label-outside" for="contact-phone">Phone</label> -->
+                <input
+                  placeholder="Your phone number"
+                  class="form-input"
+                  id="contact-phone"
+                  type="text"
+                  name="phone"
+                  data-constraints="@PhoneNumber"
+                />
+              </div>
+            </div>
+            <div class="col-md-12 wow-outer">
+              <div class="form-wrap wow fadeSlideInUp">
+                <!-- <label class="form-label-outside" for="contact-last-name">Current City </label> -->
+                <input
+                  placeholder="Your current city"
+                  class="form-input"
+                  id="contact-last-name"
+                  type="text"
+                  name="name"
+                  data-constraints="@Required"
+                />
+              </div>
+            </div>
+            <!-- <div class="col-12 wow-outer">
+                                  <div class="form-wrap wow fadeSlideInUp">
+                                     <textarea placeholder="Your message" class="form-input message" id="contact-message" name="message" data-constraints="@Required"></textarea>
+                                  </div>
+                                </div> -->
+          </div>
+          <br />
+          <div class="col-12 wow-outer">
+            <div style="text-align:center;" class="wow-outer">
+              <button
+                class="button button-primary button-winona wow slideInRight"
+                type="submit"
+              >
+                Send
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<br />
+
+<div class="container">
+<div class='toggle'>
+    <div class='tabs tabgrid'>
+      <div class='tab active'>
+        <span>Universities and Colleges</span>
+      </div>
+      <div class='tab'>
+        <span>Student visa Requirements</span>
+      </div>
+      <div class='tab'>
+        <span>Study Programs</span>
+      </div>
+      <div class='tab'>
+        <span>Empassy in india</span>
+      </div>
+    
+    </div>
+    <hr class="hr" />
+    <div class='panels'>
+      <div class='panel'>
+<div *ngFor="let university of universities"   >
+  <div class="universitylist"    *ngIf="university.contrycode === data.countrycode == true ">
+    <div>
+        <h3>  {{university.universityname}}</h3>
+        <h5>{{university.subtitle}}</h5>
+        <p>{{university.universitydescription}}</p>
+    </div>
+    <div>
+        <img src="{{env[0].url + university.UniversityImage.url}}"/>
+    </div>
+ 
+    
+ 
+  </div>
+  
+   
+</div>
+
+
+      </div>
+      <div class='panel'>
+
+        <markdown>{{data.StudentVisaRequirement}}</markdown>
+
+      </div>
+      <div class='panel'>
+       <markdown>
+        {{data.StudyPrograms}}
+       </markdown>  
+      </div>
+      <div class='panel'>
+          <markdown>{{data.EmbassyInIndia}}</markdown>
+
+      </div>
+     
+    </div>
+  </div>
+</div>

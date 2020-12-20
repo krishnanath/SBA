@@ -1,0 +1,67 @@
+<div class="swiper-slide">
+    <img class="banner-image" src="https://edabroad.in/wp-content/uploads/2018/04/banner23.jpg">
+     
+    <div class="overlay"></div>
+    </div>
+
+ 
+            <!-- <div class="overlay">
+            <img class="banner-image" src="https://blog.aifsabroad.com/wp-content/uploads/2018/11/aifs-best-places-to-study-abroad-2019.jpg"/>
+            <div class="banner-overlay"></div>
+        </div> -->
+             
+    
+    
+          <br>
+    <div class="container  ">
+            <h4 style="text-align:center;" class="text-uppercase font-weight-bold wow-outer">
+                    <span class="wow slideInDown">Explore Your Destination</span>
+                  </h4>
+    <div style="justify-content: center;" class="row row-lg-50 row-35 offset-top-2">
+      
+    
+    
+            <div  class="gridloop grid-pad overflow-auto">
+                <div class="grid-card">
+   <div *ngFor="let visa of studyabroadcountries" class="grid-box">  
+   <!-- <div  class="grid-box">  -->
+  
+      <img
+                        class="card__img"
+                        src="{{ env[0].url + visa.image.url }}"
+                        alt=""
+                        [routerLink]="['/destination',visa.id]"
+                      />
+                      <div class="content">
+                        <div class="flaggrid">
+                          <div> <h5 class="card__header">{{visa.title}}</h5></div>
+                          <div class="country-flag"> <img
+                            class="card__img"
+                            src="{{ env[0].url + visa.countryflag.url }}"
+                            alt=""
+                          /> </div>
+                    
+                  </div>
+                    <p class="card__text">{{ visa.description }}</p>
+                    <br/>
+               <div style="text-align:center;">
+                   <a [routerLink]="['/destination',visa.id]" class="button button-primary a-white button-winona button-md" target="_blank" >Read More</a>
+                  </div>
+                </div>
+
+            
+                </div>  
+    
+                </div>
+            </div>
+    
+    <div class="padding-bootom">
+    
+    </div>
+               
+    
+     
+          </div>
+        </div>
+
+     

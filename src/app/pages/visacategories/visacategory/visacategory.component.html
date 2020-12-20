@@ -1,0 +1,35 @@
+<div class="swiper-slide">
+  <img class="banner-image" src="{{ env[0].url + data.bannerimage.url }}" />
+
+  <div class="overlay"></div>
+</div>
+<div class="text-block">
+  <h3>{{ data.title }}</h3>
+</div>
+<!-- <h3>{{data.title}}</h3> -->
+<br /><br />
+
+<div class="container">
+ 
+  <div class="grid">
+    <div>
+          <h4>{{bannerimagedata[0].title}}</h4>
+          <br/>
+          <ul *ngFor="let visatitle of visacategories">
+                <li style="height:55px;">
+            <a (click)="refresh()"  [routerLink]="['/visacategory',visatitle.id]">{{visatitle.title}}</a>
+            </li>
+          </ul>
+
+    </div>
+    <div>
+      <markdown>{{ data.detailedInformation }}</markdown>
+    </div>
+    <!-- <div></div> -->
+  </div>
+</div>
+  <!-- <p>{{data.description}}</p> -->
+ 
+
+<br /><br />
+<br /><br />

@@ -1,0 +1,122 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import '../src/assets/css/bootstrap.css';
+@import '../src/assets/css/style.css';
+
+ @import 'bootstrap/dist/css/bootstrap.min.css';
+// @import 'prismjs/themes/prism-okaidia.css';
+// @import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
+// @import 'prismjs/plugins/line-highlight/prism-line-highlight.css';
+
+
+@font-face {
+    font-family:'bagnard' ;
+    src: url('./assets/bagnard-sans/BagnardSans.otf');
+}
+@font-face {
+    font-family:'seganlight' ;
+    src: url('./assets/segan/Segan-Light.ttf');
+}
+
+
+.banner-image{
+    height: 23.75vw;
+    width:100% !important;
+    object-fit: cover;
+
+}
+
+@media screen and (max-width: 777px) {
+    .banner-image{
+        height: 288px !important;
+    
+    }
+
+}
+
+.a-white {
+    color: #fff !important;
+}.a-white:hover{
+    color: #0d0d0d !important;
+}
+
+ 
+
+.padding-bootom{
+    padding-bottom: 55px;
+}
+
+.banner-image{
+    background:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73));
+   
+    background-size: cover;
+    color: white;
+    // padding: 20px;
+}
+
+ 
+
+blockquote {
+    margin-top: 41px;
+    margin-bottom: 34px;
+    font-size: 16px;
+    font-weight: 400;
+    border-left: 5px solid rgb(238, 238, 238);
+    font-style: italic;
+    padding: 10px 20px;
+}
+ 
+
+.text-caps{
+    text-transform: capitalize;
+}
+
+
+.link-default{
+    text-decoration:  none !important;
+    // color: #d5ae6a !important;
+}
+
+a{ 
+    text-decoration:  none !important; 
+}
+h1, h2,h3, h4, h5, h6 {
+    // color: #d3ad68 !important;
+    font-family: 'bagnard' !important;
+}
+
+p, .button, a, label, ::placeholder, b, strong , input, .rd-nav-link{
+    font-family: 'seganlight' !important;
+     
+
+}
+ 
+.sbalogocolor{
+
+    border-color: #d3ad68 !important;
+    color: #d3ad68 !important;
+}
+
+
+.icon-modern {
+    
+    border: 1px solid #d3ad68;
+    // color: #d3ad68;
+}
+
+.button-winona:hover{
+    background: #d3ad68 !important;
+    color: #fff !important;
+    border-color: #d3ad68 !important;
+
+}
+
+.ui-to-top{
+    background: #d3ad68 !important;
+    color: #fff !important;
+}  
+.ui-to-top:hover{
+    background: #d3ad6888 !important;
+    color: #fff !important;
+}

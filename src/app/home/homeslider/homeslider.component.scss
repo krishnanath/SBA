@@ -1,0 +1,71 @@
+ .homebanner-image{
+height: 41.66667vw;
+
+ }
+
+ .swipe-slider{
+     position: relative;
+ }
+ .text-block {
+    position: absolute;
+    top: 15%;
+    z-index: 2;
+    
+ 
+    // right: 22vh;
+    // background-color: black;
+    color: white;
+    // padding-left: 20px;
+    // padding-right: 20px;
+    h2{
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+    p{
+        font-size: 20px;
+    }
+  }
+
+  
+  .overlay {
+    position: absolute;
+      background-color: #0d0d0d69;
+      height: 100%;
+      width: 100%;
+  }
+
+  @media screen and (min-width: 768px) { 
+
+    .text-block{
+        top:18vh;
+        h2{
+            font-size: 60px !important;
+            letter-spacing: 1px;
+            
+        }
+        p{
+            font-size: 28px;
+        }
+    }
+
+
+  }
+
+
+  @media screen and (max-width:768px){
+      .homebanner-image{
+          height: 433px !important;
+          object-fit: cover !important;
+      }
+      .text-block{
+          top:200px;
+          h2{
+              font-weight: 500
+          }
+          p{
+              font-size: 12px;
+          }
+           
+      }
+  }

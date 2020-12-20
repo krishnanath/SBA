@@ -1,0 +1,42 @@
+.swiper-slider{
+    position: relative;
+}
+
+.overlay {
+ position: absolute;
+   background-color: #0d0d0d69;
+   height: 100%;
+   width: 100%;
+}
+.readmore:hover{
+    background: #313131;
+    color: #fff !important;
+      }
+
+      .text-block{
+          width: 100%;
+        position: absolute;
+        top: 40%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+     z-index: 2;
+     
+     h3{
+        text-align: center;
+        color: #ffffff;
+        text-transform: uppercase;
+     }
+
+    }
+    
+    
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 20% 80%);
+        grid-gap: 22px;
+        // margin-left: 2%;
+        // margin-right: 2%;
+    
+    }
+
+ 

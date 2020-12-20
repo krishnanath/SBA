@@ -1,0 +1,100 @@
+<header class="section novi-background page-header">
+    <!-- RD Navbar-->
+    <div class="rd-navbar-wrap">
+      <nav class="rd-navbar rd-navbar-corporate" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-lg-stick-up="true" data-lg-stick-up-offset="118px" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xl-stick-up="true" data-xl-stick-up-offset="118px" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-xxl-stick-up-offset="118px" data-xxl-stick-up="true">
+        <div class="rd-navbar-aside-outer">
+          <div class="rd-navbar-aside">
+            <!-- RD Navbar Panel-->
+            <div class="rd-navbar-panel">
+              <!-- RD Navbar Toggle-->
+              <button class="rd-navbar-toggle" data-rd-navbar-toggle="#rd-navbar-nav-wrap-1"><span></span></button>
+              <!-- RD Navbar Brand--><a class="rd-navbar-brand" ><img routerLink="/" src="assets/SBA/logo.jpg" alt="" width="151px" height="44px" srcset="assets/SBA/logo.jpg 2x"/></a>
+            </div>
+            <div class="rd-navbar-collapse sbalogocolor">
+              <button class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle="#rd-navbar-collapse-content-1"><span></span></button>
+              <div class="rd-navbar-collapse-content" id="rd-navbar-collapse-content-1">
+                <article class="unit align-items-center">
+                  <div class="unit-left"><span class="icon novi-icon icon-md icon-modern mdi mdi-phone sbalogocolor"></span></div>
+                  <div class="unit-body topnavtextpad">
+                    <ul class="list-0 sbalogocolor  ">
+                      <li><a class="link-default sbalogocolor" href="tel:{{Sbainformation.phoneNoDefault}}">{{Sbainformation.phoneNoDefault}}</a></li>
+                      <li><a class="link-default sbalogocolor" href="tel:{{Sbainformation.phoneNoAlternate}}">{{Sbainformation.phoneNoAlternate}}</a></li>
+                    </ul>
+                  </div>
+                </article>
+                <article class="unit align-items-center">
+                  <div class="unit-left"><span class="icon novi-icon icon-md icon-modern mdi mdi-map-marker sbalogocolor"></span></div>
+                  <div class="unit-body topnavtextpad">
+                     
+                      
+    <p style="width:125px;"> {{Sbainformation.headerAddress}}</p>  
+                    
+  </div>
+                </article><a class="button button-gray-bordered button-winona sbalogocolor" href="tel:{{Sbainformation.phoneNoAlternate}}">Request a call</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rd-navbar-main-outer">
+          <div class="rd-navbar-main ">
+            <div class="rd-navbar-nav-wrap" id="rd-navbar-nav-wrap-1">
+              <!-- RD Navbar Nav-->
+              <ul class="rd-navbar-nav container">
+                <li class="rd-nav-item "><a class="rd-nav-link" routerLink="">Home</a>
+                </li>
+                <li class="rd-nav-item"><a class="rd-nav-link" routerLink="aboutus">About us</a>
+                </li>
+                <li class="largescreennav   rd-nav-item nav-item dropdown has-megamenu">
+                    <a class="rd-nav-link nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> Study in  </a>
+                    <div class="dropdown-menu largescreenmegamenu  megamenu">
+                      
+        <!-- <ul *ngFor="let navlink of studyabroadcountries">
+          <li>{{navlink.title}}</li>
+
+        </ul> -->
+
+        <div class="navgrid">
+          <div  *ngFor="let navlink of studyabroadcountries">
+            <div (click)="refresh()" [routerLink]="['/destination',navlink.id]" class="countrylistgrid">
+
+            
+            <div style="text-align:left;">
+                
+                <img src="{{env[0].url + navlink.countryflag.url}}"/>
+            </div>
+            <div style="text-align:left;">
+                <a>{{navlink.title}}
+            
+                </a>
+            </div>
+
+
+          </div>
+
+            
+            
+          </div>
+        </div>
+
+        <p style="text-align:center; margin-bottom: 0; margin-top: 11px; cursor: pointer;" routerLink="/studyabroadcountries">VIEW ALL</p>
+
+                          </div> <!-- dropdown-mega-menu.// -->
+                </li>
+                <li class="rd-nav-item"><a class="rd-nav-link" routerLink="">Services</a>
+                </li>
+                <li class="rd-nav-item"><a class="rd-nav-link" routerLink="contact">Contacts</a>
+                </li>
+             
+        
+            
+              
+              </ul>
+            </div>
+
+     
+
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
