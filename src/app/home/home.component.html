@@ -14,7 +14,7 @@
          <div class="grid">
            <div class="grid__item">
              <div class="card">
-               <img class="card__img" src="{{ env[0].url + visacategories[0].image.url }}" alt="" />
+               <img class="card__img" src="{{visacategories[0].image.url }}" alt="" />
                <div class="card__content">
                  <h1 class="card__header">{{ visacategories[0].title }}</h1>
                  <p class="card__text">{{ visacategories[0].description }}</p>
@@ -29,7 +29,7 @@
            </div>
            <div class="grid__item">
              <div class="card">
-               <img class="card__img" src="{{ env[0].url + visacategories[1].image.url }}" alt="" />
+               <img class="card__img" src="{{visacategories[1].image.url }}" alt="" />
                <div class="card__content">
                  <h1 class="card__header">{{ visacategories[1].title }}</h1>
                  <p class="card__text">{{ visacategories[1].description }}</p>
@@ -45,7 +45,7 @@
 
            <div class="grid__item">
              <div class="card">
-               <img class="card__img" src="{{ env[0].url + visacategories[2].image.url }}" alt="" />
+               <img class="card__img" src="{{visacategories[2].image.url }}" alt="" />
                <div class="card__content">
                  <h1 class="card__header">{{ visacategories[2].title }}</h1>
                  <p class="card__text">{{ visacategories[2].description }}</p>
@@ -60,7 +60,7 @@
            </div>
            <div class="grid__item">
              <div class="card">
-               <img class="card__img" src="{{ env[0].url + visacategories[3].image.url }}" alt="" />
+               <img class="card__img" src="{{visacategories[3].image.url }}" alt="" />
                <div class="card__content">
                  <h1 class="card__header">{{ visacategories[3].title }}</h1>
                  <p class="card__text">{{ visacategories[3].description }}</p>
@@ -75,7 +75,7 @@
            </div>
            <div class="grid__item">
              <div class="card">
-               <img class="card__img" src="{{ env[0].url + visacategories[4].image.url }}" alt="" />
+               <img class="card__img" src="{{visacategories[4].image.url }}" alt="" />
                <div class="card__content">
                  <h1 class="card__header">{{ visacategories[4].title }}</h1>
                  <p class="card__text">{{ visacategories[4].description }}</p>
@@ -90,7 +90,7 @@
            </div>
            <div class="grid__item">
              <div class="card">
-               <img class="card__img" src="{{ env[0].url + visacategories[5].image.url }}" alt="" />
+               <img class="card__img" src="{{visacategories[5].image.url }}" alt="" />
                <div class="card__content">
                  <h1 class="card__header">{{ visacategories[5].title }}</h1>
                  <p class="card__text">{{ visacategories[5].description }}</p>
@@ -196,7 +196,7 @@
            <div class="card cardhover">
              <a [routerLink]="['/destination',studyabroadcountries[0].id]">
 
-               <img class="card__img" src="{{ env[0].url + studyabroadcountries[0].image.url }}" alt="" />
+               <img class="card__img" src="{{studyabroadcountries[0].image.url }}" alt="" />
              </a>
              <div class="card__content country-card">
                <div>
@@ -205,7 +205,7 @@
                </div>
 
                <div class="country-flag">
-                 <img src="{{ env[0].url + studyabroadcountries[0].countryflag.url }}" />
+                 <img src="{{studyabroadcountries[0].countryflag.url }}" />
                </div>
 
 
@@ -217,7 +217,7 @@
            <div class="card cardhover">
              <a [routerLink]="['/destination',studyabroadcountries[1].id]">
 
-               <img class="card__img" src="{{ env[0].url + studyabroadcountries[1].image.url }}" alt="" />
+               <img class="card__img" src="{{studyabroadcountries[1].image.url }}" alt="" />
              </a>
              <div class="card__content">
                <div class="country-card">
@@ -227,7 +227,7 @@
                  </div>
 
                  <div class="country-flag">
-                   <img src="{{ env[0].url + studyabroadcountries[1].countryflag.url }}" />
+                   <img src="{{studyabroadcountries[1].countryflag.url }}" />
                  </div>
                </div>
                <!-- <p class="countrydes">{{studyabroadcountries[1].description}}</p>  -->
@@ -243,7 +243,7 @@
            <div class="card cardhover">
              <a [routerLink]="['/destination',studyabroadcountries[2].id]">
 
-               <img class="card__img" src="{{ env[0].url + studyabroadcountries[2].image.url }}" alt="" />
+               <img class="card__img" src="{{studyabroadcountries[2].image.url }}" alt="" />
              </a>
              <div class="card__content country-card">
                <div>
@@ -252,7 +252,7 @@
                </div>
 
                <div class="country-flag">
-                 <img src="{{ env[0].url + studyabroadcountries[2].countryflag.url }}" />
+                 <img src="{{studyabroadcountries[2].countryflag.url }}" />
                </div>
 
 
@@ -264,7 +264,7 @@
            <div class="card cardhover">
              <a [routerLink]="['/destination',studyabroadcountries[3].id]">
 
-               <img class="card__img" src="{{ env[0].url + studyabroadcountries[3].image.url }}" alt="" />
+               <img class="card__img" src="{{studyabroadcountries[3].image.url }}" alt="" />
              </a>
              <div class="card__content country-card">
                <div>
@@ -273,7 +273,7 @@
                </div>
 
                <div class="country-flag">
-                 <img src="{{ env[0].url + studyabroadcountries[3].countryflag.url }}" />
+                 <img src="{{studyabroadcountries[3].countryflag.url }}" />
                </div>
 
 
@@ -285,7 +285,7 @@
            <div class="card cardhover">
              <a [routerLink]="['/destination',studyabroadcountries[4].id]">
 
-               <img class="card__img" src="{{ env[0].url + studyabroadcountries[4].image.url }}" alt="" />
+               <img class="card__img" src="{{studyabroadcountries[4].image.url }}" alt="" />
              </a>
              <div class="card__content country-card">
                <div>
@@ -294,7 +294,7 @@
                </div>
 
                <div class="country-flag">
-                 <img src="{{ env[0].url + studyabroadcountries[4].countryflag.url }}" />
+                 <img src="{{studyabroadcountries[4].countryflag.url }}" />
                </div>
 
 
@@ -305,7 +305,7 @@
          <div class="grid__item">
            <div class="card cardhover">
              <a [routerLink]="['/destination',studyabroadcountries[5].id]">
-               <img class="card__img" src="{{ env[0].url + studyabroadcountries[5].image.url }}" alt="" />
+               <img class="card__img" src="{{studyabroadcountries[5].image.url }}" alt="" />
              </a>
              <div class="card__content country-card">
                <div>
@@ -315,7 +315,7 @@
 
                <div class="country-flag">
 
-                 <img src="{{ env[0].url + studyabroadcountries[5].countryflag.url }}" />
+                 <img src="{{studyabroadcountries[5].countryflag.url }}" />
                </div>
 
 
